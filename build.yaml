@@ -1,0 +1,11 @@
+global_options:
+  dart_mappable_builder:
+    runs_before:
+      - retrofit_generator
+      - chopper_generator
+    options:
+       renameMethods:
+        fromJson: fromJsonString
+        toJson: toJsonString
+        fromMap: fromJson
+        toMap: toJson

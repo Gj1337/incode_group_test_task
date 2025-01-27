@@ -1,6 +1,12 @@
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:incode_group_test_task/src/data/data_source/network_data_source.dart';
 
-void main() {
+void main() async {
+  final networkDataSource =  NetworkDataSource(Dio());
+
+  print(await networkDataSource.getCharacters());
+
   runApp(const MainApp());
 }
 
