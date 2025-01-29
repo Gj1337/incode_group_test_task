@@ -1,7 +1,7 @@
-import 'package:incode_group_test_task/src/data/entity/network_character.dart';
+import 'package:incode_group_test_task/src/data/entity/network/network_character.dart';
 import 'package:incode_group_test_task/src/data/mapper/network_wand_to_wand_mapper.dart';
 import 'package:incode_group_test_task/src/domain/entity/character.dart';
-import 'package:incode_group_test_task/src/utils/string_extension.dart';
+import 'package:incode_group_test_task/src/data/utils/string_extension.dart';
 import 'package:injectable/injectable.dart';
 
 @injectable

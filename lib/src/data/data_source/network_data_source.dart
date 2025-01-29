@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:incode_group_test_task/src/data/entity/network_character.dart';
+import 'package:incode_group_test_task/src/data/entity/network/network_character.dart';
 import 'package:injectable/injectable.dart';
 import 'package:retrofit/error_logger.dart';
 import 'package:retrofit/http.dart';

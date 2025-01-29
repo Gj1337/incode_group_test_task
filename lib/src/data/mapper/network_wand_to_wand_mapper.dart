@@ -1,4 +1,4 @@
-import 'package:incode_group_test_task/src/data/entity/network_wand.dart';
+import 'package:incode_group_test_task/src/data/entity/network/network_wand.dart';
 import 'package:incode_group_test_task/src/domain/entity/wand.dart';
 import 'package:injectable/injectable.dart';
 

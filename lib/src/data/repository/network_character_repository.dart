@@ -4,23 +4,23 @@ import 'package:incode_group_test_task/src/domain/entity/character.dart';
 import 'package:incode_group_test_task/src/domain/repository/character_repository.dart';
 import 'package:injectable/injectable.dart';
 
-@singleton
+@Singleton(as: CharacterRepository)
 class NetworkCharacterRepository implements CharacterRepository {
-  NetworkCharacterRepository(
-    this.networkDataSource,
-    this.networkCharacterToCharacterMapper,
+  const NetworkCharacterRepository(
+    this._networkDataSource,
+    this._networkCharacterToCharacterMapper,
   );
 
-  final NetworkDataSource networkDataSource;
+  final NetworkDataSource _networkDataSource;
 
-  final NetworkCharacterToCharacterMapper networkCharacterToCharacterMapper;
+  final NetworkCharacterToCharacterMapper _networkCharacterToCharacterMapper;
 
   @override
   Future<List<Character>> getCharacters() async {
-    final networkCharacters = await networkDataSource.getCharacters();
+    final networkCharacters = await _networkDataSource.getCharacters();
 
     final characters =
-        networkCharacters.map(networkCharacterToCharacterMapper.call).toList();
+        networkCharacters.map(_networkCharacterToCharacterMapper.call).toList();
 
     return characters;
   }

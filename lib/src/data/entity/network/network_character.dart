@@ -1,5 +1,5 @@
 import 'package:dart_mappable/dart_mappable.dart';
-import 'package:incode_group_test_task/src/data/entity/network_wand.dart';
+import 'package:incode_group_test_task/src/data/entity/network/network_wand.dart';
 
 part 'network_character.mapper.dart';
 
